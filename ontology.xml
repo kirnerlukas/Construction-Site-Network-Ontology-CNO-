@@ -15,12 +15,11 @@
         <terms:creator xml:lang="en">Kirner, L., Individualized Production RWTH Aachen</terms:creator>
         <terms:creator>Oraskari, J., Individualized Production RWTH Aachen</terms:creator>
         <terms:creator>Zoecklein, M., Center Construction Robotics (CCR)</terms:creator>
-        <terms:description xml:lang="en">wip</terms:description>
         <terms:issued xml:lang="en">2023-12-04</terms:issued>
         <terms:title xml:lang="en">CNO: Construction Site Network Ontology</terms:title>
         <vann:preferredNamespacePrefix>cno</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://w3id.org/cno#</vann:preferredNamespaceUri>
-        <rdfs:comment>The Construction Site Network Ontology (CNO) is a domain ontology to describe concepts concerning wireless RF networks for construction sites. Its goal is to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches.</rdfs:comment>
+        <rdfs:comment>The Construction Site Network Ontology (CNO) is intended to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches. It is based on recommendation ITU-R P.2040 [1]. This work is part of the research project EConoM, funded by the Federal Ministry for Digital and Transport of Germany within the initiative InnoNT (funding number 19Ol22009F). It was supported within the TARGET-X framework, a project funded by the Smart Networks and Services Joint Undertaking (SNS JU) under Horizon Europe (funding number 101096614). The authors are responsible for the content.</rdfs:comment>
         <owl:versionInfo>0.1.2</owl:versionInfo>
     </owl:Ontology>
     
@@ -453,9 +452,21 @@
 
     <owl:Class rdf:about="http://qudt.org/vocab/unit/DeciB_M">
         <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
-        <rdfs:isDefinedBy>&quot;Decibel Referred to 1mw&quot; is a &apos;Dimensionless Ratio&apos; expressed as dBm.</rdfs:isDefinedBy>
+        <rdfs:comment>&quot;Decibel Referred to 1mw&quot; is a &apos;Dimensionless Ratio&apos; expressed as dBm.</rdfs:comment>
         <rdfs:isDefinedBy>http://qudt.org/vocab/unit/</rdfs:isDefinedBy>
         <rdfs:label>dBm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/HZ -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit/HZ">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment>HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.</rdfs:comment>
+        <rdfs:isDefinedBy>http://qudt.org/vocab/unit/</rdfs:isDefinedBy>
+        <rdfs:label>Hz</rdfs:label>
     </owl:Class>
     
 
@@ -520,7 +531,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#HZ"/>
+                <owl:allValuesFrom rdf:resource="http://qudt.org/vocab/unit/HZ"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Frequency is the number of occurrences of a repeating event per unit time, measured in Hertz (Hz).</rdfs:comment>
@@ -663,18 +674,6 @@
         <rdfs:comment>The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here.</rdfs:comment>
         <rdfs:isDefinedBy>http://w3id.org/ioc#</rdfs:isDefinedBy>
         <rdfs:label>Process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.opengis.net/ont/geosparql#HZ -->
-
-
-    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#HZ">
-        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
-        <rdfs:comment>HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.</rdfs:comment>
-        <rdfs:isDefinedBy>http://qudt.org/vocab/unit/</rdfs:isDefinedBy>
-        <rdfs:label>Hz</rdfs:label>
     </owl:Class>
     
 

@@ -2,12 +2,11 @@
 <http://w3id.org/cno> <http://purl.org/dc/terms/creator> "Kirner, L., Individualized Production RWTH Aachen"@en .
 <http://w3id.org/cno> <http://purl.org/dc/terms/creator> "Oraskari, J., Individualized Production RWTH Aachen" .
 <http://w3id.org/cno> <http://purl.org/dc/terms/creator> "Zoecklein, M., Center Construction Robotics (CCR)" .
-<http://w3id.org/cno> <http://purl.org/dc/terms/description> "wip"@en .
 <http://w3id.org/cno> <http://purl.org/dc/terms/issued> "2023-12-04"@en .
 <http://w3id.org/cno> <http://purl.org/dc/terms/title> "CNO: Construction Site Network Ontology"@en .
 <http://w3id.org/cno> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cno" .
 <http://w3id.org/cno> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/cno#" .
-<http://w3id.org/cno> <http://www.w3.org/2000/01/rdf-schema#comment> "The Construction Site Network Ontology (CNO) is a domain ontology to describe concepts concerning wireless RF networks for construction sites. Its goal is to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches." .
+<http://w3id.org/cno> <http://www.w3.org/2000/01/rdf-schema#comment> "The Construction Site Network Ontology (CNO) is intended to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches. It is based on recommendation ITU-R P.2040 [1]. This work is part of the research project EConoM, funded by the Federal Ministry for Digital and Transport of Germany within the initiative InnoNT (funding number 19Ol22009F). It was supported within the TARGET-X framework, a project funded by the Smart Networks and Services Joint Undertaking (SNS JU) under Horizon Europe (funding number 101096614). The authors are responsible for the content." .
 <http://w3id.org/cno> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2" .
 # 
 # 
@@ -271,9 +270,16 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://qudt.org/vocab/unit/DeciB_M
 <http://qudt.org/vocab/unit/DeciB_M> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://qudt.org/vocab/unit/DeciB_M> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Unit> .
-<http://qudt.org/vocab/unit/DeciB_M> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm." .
+<http://qudt.org/vocab/unit/DeciB_M> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm." .
 <http://qudt.org/vocab/unit/DeciB_M> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://qudt.org/vocab/unit/" .
 <http://qudt.org/vocab/unit/DeciB_M> <http://www.w3.org/2000/01/rdf-schema#label> "dBm" .
+# 
+# http://qudt.org/vocab/unit/HZ
+<http://qudt.org/vocab/unit/HZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/unit/HZ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Unit> .
+<http://qudt.org/vocab/unit/HZ> <http://www.w3.org/2000/01/rdf-schema#comment> "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves." .
+<http://qudt.org/vocab/unit/HZ> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://qudt.org/vocab/unit/" .
+<http://qudt.org/vocab/unit/HZ> <http://www.w3.org/2000/01/rdf-schema#label> "Hz" .
 # 
 # http://qudt.org/vocab/unit/MilliW
 <http://qudt.org/vocab/unit/MilliW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -311,7 +317,7 @@ _:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://qudt.org/vocab/u
 <http://w3id.org/cno#Frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/hasUnit> .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/geosparql#HZ> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://qudt.org/vocab/unit/HZ> .
 <http://w3id.org/cno#Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency is the number of occurrences of a repeating event per unit time, measured in Hertz (Hz)." .
 <http://w3id.org/cno#Frequency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://w3id.org/cno#" .
 <http://w3id.org/cno#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency" .
@@ -398,13 +404,6 @@ _:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/cno#Position>
 <http://w3id.org/ioc#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here." .
 <http://w3id.org/ioc#Process> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://w3id.org/ioc#" .
 <http://w3id.org/ioc#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process" .
-# 
-# http://www.opengis.net/ont/geosparql#HZ
-<http://www.opengis.net/ont/geosparql#HZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.opengis.net/ont/geosparql#HZ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Unit> .
-<http://www.opengis.net/ont/geosparql#HZ> <http://www.w3.org/2000/01/rdf-schema#comment> "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves." .
-<http://www.opengis.net/ont/geosparql#HZ> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://qudt.org/vocab/unit/" .
-<http://www.opengis.net/ont/geosparql#HZ> <http://www.w3.org/2000/01/rdf-schema#label> "Hz" .
 # 
 # https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial
 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

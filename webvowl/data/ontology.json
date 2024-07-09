@@ -9,17 +9,14 @@
     "iri" : "http://w3id.org/cno",
     "version" : "0.1.2",
     "author" : [ "Oraskari, J., Individualized Production RWTH Aachen", "Zoecklein, M., Center Construction Robotics (CCR)", "Kirner, L., Individualized Production RWTH Aachen" ],
-    "description" : {
-      "en" : "wip"
-    },
     "comments" : {
-      "undefined" : "The Construction Site Network Ontology (CNO) is a domain ontology to describe concepts concerning wireless RF networks for construction sites. Its goal is to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches."
+      "undefined" : "The Construction Site Network Ontology (CNO) is intended to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches. It is based on recommendation ITU-R P.2040 [1]. This work is part of the research project EConoM, funded by the Federal Ministry for Digital and Transport of Germany within the initiative InnoNT (funding number 19Ol22009F). It was supported within the TARGET-X framework, a project funded by the Smart Networks and Services Joint Undertaking (SNS JU) under Horizon Europe (funding number 101096614). The authors are responsible for the content."
     },
     "other" : {
       "creator" : [ {
         "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Oraskari, J., Individualized Production RWTH Aachen",
+        "language" : "en",
+        "value" : "Kirner, L., Individualized Production RWTH Aachen",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -28,8 +25,8 @@
         "type" : "label"
       }, {
         "identifier" : "creator",
-        "language" : "en",
-        "value" : "Kirner, L., Individualized Production RWTH Aachen",
+        "language" : "undefined",
+        "value" : "Oraskari, J., Individualized Production RWTH Aachen",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -38,16 +35,16 @@
         "value" : "cno",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/cno#",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1.2",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -78,10 +75,10 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -96,13 +93,10 @@
     "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -155,6 +149,9 @@
   }, {
     "id" : "54",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
   }, {
     "id" : "27",
     "type" : "owl:Class"
@@ -228,28 +225,6 @@
     "id" : "5",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "http://qudt.org/schema/qudt/Unit",
-    "baseIri" : "http://qudt.org/schema/qudt",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Unit",
-      "undefined" : "Unit"
-    },
-    "subClasses" : [ "9", "10", "11", "12" ],
-    "comment" : {
-      "undefined" : "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."
-    },
-    "attributes" : [ "external" ],
-    "id" : "8"
-  }, {
     "iri" : "http://qudt.org/vocab/unit/MilliW",
     "baseIri" : "http://qudt.org/vocab/unit",
     "instances" : 0,
@@ -269,8 +244,8 @@
       "undefined" : "A unit of power equal to one thousandth of a watt."
     },
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "8" ]
+    "id" : "8",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial",
     "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html",
@@ -294,6 +269,28 @@
     "attributes" : [ "external" ],
     "id" : "6"
   }, {
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Unit",
+      "undefined" : "Unit"
+    },
+    "subClasses" : [ "10", "11", "8", "12" ],
+    "comment" : {
+      "undefined" : "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
     "iri" : "http://qudt.org/vocab/unit/DeciB",
     "baseIri" : "http://qudt.org/vocab/unit",
     "instances" : 0,
@@ -314,7 +311,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "12",
-    "superClasses" : [ "8" ]
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://w3id.org/cno#Omnidirectional",
     "baseIri" : "http://w3id.org/cno",
@@ -386,11 +383,6 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm.",
-        "type" : "label"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://qudt.org/vocab/unit/",
         "type" : "label"
       } ]
@@ -399,9 +391,12 @@
       "IRI-based" : "DeciB_M",
       "undefined" : "dBm"
     },
+    "comment" : {
+      "undefined" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm."
+    },
     "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "8" ]
+    "id" : "11",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/cno#Conductor",
     "baseIri" : "https://w3id.org/cno",
@@ -424,28 +419,6 @@
     "attributes" : [ "external" ],
     "id" : "7",
     "superClasses" : [ "5" ]
-  }, {
-    "iri" : "http://www.opengis.net/ont/geosparql#HZ",
-    "baseIri" : "http://www.opengis.net/ont/geosparql",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://qudt.org/vocab/unit/",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "HZ",
-      "undefined" : "Hz"
-    },
-    "comment" : {
-      "undefined" : "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."
-    },
-    "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://w3id.org/cno#Process",
     "baseIri" : "http://w3id.org/cno",
@@ -686,6 +659,28 @@
       "IRI-based" : "double"
     }
   }, {
+    "iri" : "http://qudt.org/vocab/unit/HZ",
+    "baseIri" : "http://qudt.org/vocab/unit",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/unit/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HZ",
+      "undefined" : "Hz"
+    },
+    "comment" : {
+      "undefined" : "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
     "iri" : "https://w3id.org/bot#Element",
     "baseIri" : "https://w3id.org/bot",
     "instances" : 0,
@@ -817,10 +812,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "61",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "62",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "63",
     "type" : "owl:objectProperty"
@@ -869,13 +864,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "16"
   }, {
-    "range" : "6",
-    "domain" : "5",
+    "range" : "9",
+    "domain" : "12",
     "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
-    "range" : "8",
-    "domain" : "12",
+    "range" : "9",
+    "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
@@ -957,7 +952,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "8",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -977,17 +972,17 @@
     "attributes" : [ "object", "external" ],
     "id" : "32"
   }, {
-    "range" : "8",
+    "range" : "9",
     "domain" : "10",
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
-    "range" : "8",
-    "domain" : "9",
+    "range" : "6",
+    "domain" : "5",
     "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
-    "range" : "8",
+    "range" : "9",
     "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
     "id" : "36"
@@ -1062,7 +1057,7 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "48"
   }, {
     "iri" : "http://w3id.org/cno#hasRelativePermittivityFrequencyCoefficient",
@@ -1106,7 +1101,7 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "50"
   }, {
     "iri" : "http://qudt.org/schema/qudt/numericValue",
@@ -1133,7 +1128,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "11",
+    "range" : "8",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1150,7 +1145,7 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "55"
   }, {
     "range" : "4",
@@ -1165,7 +1160,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "9",
+    "range" : "11",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1182,7 +1177,7 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "58"
   }, {
     "range" : "17",
@@ -1209,20 +1204,6 @@
     "attributes" : [ "object" ],
     "id" : "60"
   }, {
-    "iri" : "http://w3id.org/ioc#hasOutputElement",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "hasOutputElement",
-      "undefined" : "hasOutputElement"
-    },
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "Connects an element that the process has transformed."
-    },
-    "attributes" : [ "asymmetric", "object", "external" ],
-    "id" : "61"
-  }, {
     "iri" : "http://www.opengis.net/ont/geosparql#asWKT",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
     "range" : "37",
@@ -1243,6 +1224,20 @@
       "undefined" : "The WKT serialization of a Geometry."
     },
     "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasOutputElement",
+      "undefined" : "hasOutputElement"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Connects an element that the process has transformed."
+    },
+    "attributes" : [ "asymmetric", "object", "external" ],
     "id" : "62"
   }, {
     "iri" : "http://w3id.org/cno#hasAttenuationRate",

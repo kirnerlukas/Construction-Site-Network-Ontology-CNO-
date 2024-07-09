@@ -25,7 +25,7 @@
   "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#HZ"
+    "@id" : "http://qudt.org/vocab/unit/HZ"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://qudt.org/schema/qudt/hasUnit"
@@ -255,13 +255,29 @@
 }, {
   "@id" : "http://qudt.org/vocab/unit/DeciB_M",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm."
-  }, {
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://qudt.org/vocab/unit/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "dBm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/HZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://qudt.org/vocab/unit/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hz"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/schema/qudt/Unit"
@@ -298,10 +314,6 @@
   }, {
     "@value" : "Zoecklein, M., Center Construction Robotics (CCR)"
   } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "wip"
-  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@language" : "en",
     "@value" : "2023-12-04"
@@ -317,7 +329,7 @@
     "@value" : "http://w3id.org/cno#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The Construction Site Network Ontology (CNO) is a domain ontology to describe concepts concerning wireless RF networks for construction sites. Its goal is to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches."
+    "@value" : "The Construction Site Network Ontology (CNO) is intended to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches. It is based on recommendation ITU-R P.2040 [1]. This work is part of the research project EConoM, funded by the Federal Ministry for Digital and Transport of Germany within the initiative InnoNT (funding number 19Ol22009F). It was supported within the TARGET-X framework, a project funded by the Smart Networks and Services Joint Undertaking (SNS JU) under Horizon Europe (funding number 101096614). The authors are responsible for the content."
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.1.2"
@@ -696,21 +708,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://w3id.org/cno#Obstacle"
-  } ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#HZ",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://qudt.org/vocab/unit/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Hz"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://qudt.org/schema/qudt/Unit"
   } ]
 }, {
   "@id" : "http://www.opengis.net/ont/geosparql#asWKT",
