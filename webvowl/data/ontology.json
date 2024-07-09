@@ -66,7 +66,7 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "4",
@@ -78,7 +78,7 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -96,19 +96,19 @@
     "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "31",
@@ -181,8 +181,8 @@
     "comment" : {
       "undefined" : "Directionality refers to an antenna's ability to focus the signal in a specific direction, enhancing signal strength and range in that direction while minimizing it in others."
     },
-    "id" : "0",
-    "superClasses" : [ "1" ]
+    "id" : "3",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/cno#Dielectric",
     "baseIri" : "https://w3id.org/cno",
@@ -228,28 +228,6 @@
     "id" : "5",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "http://qudt.org/schema/qudt/Unit",
-    "baseIri" : "http://qudt.org/schema/qudt",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Unit",
-      "undefined" : "Unit"
-    },
-    "subClasses" : [ "9", "10", "11", "12" ],
-    "comment" : {
-      "undefined" : "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."
-    },
-    "attributes" : [ "external" ],
-    "id" : "8"
-  }, {
     "iri" : "http://qudt.org/vocab/unit/MilliW",
     "baseIri" : "http://qudt.org/vocab/unit",
     "instances" : 0,
@@ -269,8 +247,30 @@
       "undefined" : "A unit of power equal to one thousandth of a watt."
     },
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "8" ]
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Unit",
+      "undefined" : "Unit"
+    },
+    "subClasses" : [ "10", "11", "8", "12" ],
+    "comment" : {
+      "undefined" : "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
   }, {
     "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial",
     "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html",
@@ -314,7 +314,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "12",
-    "superClasses" : [ "8" ]
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://w3id.org/cno#Omnidirectional",
     "baseIri" : "http://w3id.org/cno",
@@ -335,7 +335,7 @@
       "undefined" : "Omnidirectionality refers to an antenna's ability to radiate or receive signals uniformly in all horizontal directions, providing 360-degree coverage"
     },
     "id" : "17",
-    "superClasses" : [ "1" ]
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "http://w3id.org/ioc#Process",
     "baseIri" : "http://w3id.org/ioc",
@@ -386,12 +386,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm.",
+        "value" : "http://qudt.org/vocab/unit/",
         "type" : "label"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://qudt.org/vocab/unit/",
+        "value" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm.",
         "type" : "label"
       } ]
     },
@@ -400,8 +400,8 @@
       "undefined" : "dBm"
     },
     "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "8" ]
+    "id" : "10",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/cno#Conductor",
     "baseIri" : "https://w3id.org/cno",
@@ -444,8 +444,8 @@
       "undefined" : "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."
     },
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "8" ]
+    "id" : "11",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://w3id.org/cno#Process",
     "baseIri" : "http://w3id.org/cno",
@@ -466,7 +466,7 @@
     "comment" : {
       "undefined" : "An antenna is the interface between radio waves propagating through space and electric currents moving in metal conductors."
     },
-    "id" : "3"
+    "id" : "1"
   }, {
     "iri" : "http://w3id.org/cno#Direction",
     "baseIri" : "http://w3id.org/cno",
@@ -483,11 +483,11 @@
       "IRI-based" : "Direction",
       "undefined" : "Direction"
     },
-    "subClasses" : [ "0", "17" ],
+    "subClasses" : [ "3", "17" ],
     "comment" : {
       "undefined" : "Direction characterizes the pattern in which an antenna radiates or receives signals. Typical types include omnidirectional antennas, which radiate equally in all directions, and directional antennas, which focus the signal in a specific direction for increased range and performance."
     },
-    "id" : "1"
+    "id" : "2"
   }, {
     "iri" : "http://w3id.org/cno#AttenuationRate",
     "baseIri" : "http://w3id.org/cno",
@@ -550,7 +550,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "21",
-    "superClasses" : [ "3" ]
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -667,7 +667,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "15",
-    "superClasses" : [ "3" ]
+    "superClasses" : [ "1" ]
   }, {
     "instances" : 0,
     "union" : [ "38", "31", "40", "51" ],
@@ -729,7 +729,7 @@
     "id" : "51"
   } ],
   "property" : [ {
-    "id" : "2",
+    "id" : "0",
     "type" : "owl:objectProperty"
   }, {
     "id" : "13",
@@ -817,10 +817,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "61",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "62",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "63",
     "type" : "owl:objectProperty"
@@ -837,7 +837,7 @@
   "propertyAttribute" : [ {
     "iri" : "http://w3id.org/cno#hasDirection",
     "baseIri" : "http://w3id.org/cno",
-    "range" : "1",
+    "range" : "2",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -850,21 +850,21 @@
       "IRI-based" : "hasDirection",
       "undefined" : "hasDirection"
     },
-    "domain" : "3",
+    "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "2"
+    "id" : "0"
   }, {
-    "range" : "1",
-    "domain" : "0",
+    "range" : "2",
+    "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
     "id" : "13"
   }, {
-    "range" : "3",
+    "range" : "1",
     "domain" : "15",
     "attributes" : [ "object", "anonymous" ],
     "id" : "14"
   }, {
-    "range" : "1",
+    "range" : "2",
     "domain" : "17",
     "attributes" : [ "object", "anonymous" ],
     "id" : "16"
@@ -874,12 +874,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
-    "range" : "8",
+    "range" : "9",
     "domain" : "12",
     "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
-    "range" : "3",
+    "range" : "1",
     "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "20"
@@ -903,7 +903,7 @@
     "comment" : {
       "undefined" : "A spatial representation for a given Feature."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "22"
   }, {
     "range" : "23",
@@ -957,7 +957,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "8",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -974,21 +974,21 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "32"
   }, {
-    "range" : "8",
-    "domain" : "10",
+    "range" : "9",
+    "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
-    "range" : "8",
-    "domain" : "9",
+    "range" : "9",
+    "domain" : "10",
     "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
-    "range" : "8",
-    "domain" : "11",
+    "range" : "9",
+    "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
@@ -1045,7 +1045,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "10",
+    "range" : "11",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1062,7 +1062,7 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "48"
   }, {
     "iri" : "http://w3id.org/cno#hasRelativePermittivityFrequencyCoefficient",
@@ -1106,7 +1106,7 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "50"
   }, {
     "iri" : "http://qudt.org/schema/qudt/numericValue",
@@ -1128,12 +1128,12 @@
     "comment" : {
       "undefined" : "Numeric value of for somethinig described by an unit."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "52"
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "11",
+    "range" : "8",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1150,7 +1150,7 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "55"
   }, {
     "range" : "4",
@@ -1165,7 +1165,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "9",
+    "range" : "10",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1182,11 +1182,11 @@
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "58"
   }, {
     "range" : "17",
-    "domain" : "0",
+    "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
@@ -1209,20 +1209,6 @@
     "attributes" : [ "object" ],
     "id" : "60"
   }, {
-    "iri" : "http://w3id.org/ioc#hasOutputElement",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "hasOutputElement",
-      "undefined" : "hasOutputElement"
-    },
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "Connects an element that the process has transformed."
-    },
-    "attributes" : [ "asymmetric", "external", "object" ],
-    "id" : "61"
-  }, {
     "iri" : "http://www.opengis.net/ont/geosparql#asWKT",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
     "range" : "37",
@@ -1242,7 +1228,21 @@
     "comment" : {
       "undefined" : "The WKT serialization of a Geometry."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasOutputElement",
+      "undefined" : "hasOutputElement"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Connects an element that the process has transformed."
+    },
+    "attributes" : [ "asymmetric", "object", "external" ],
     "id" : "62"
   }, {
     "iri" : "http://w3id.org/cno#hasAttenuationRate",
@@ -1301,7 +1301,7 @@
       "IRI-based" : "hasPosition",
       "undefined" : "hasPosition"
     },
-    "domain" : "3",
+    "domain" : "1",
     "attributes" : [ "object" ],
     "id" : "65"
   }, {
@@ -1320,7 +1320,7 @@
       "IRI-based" : "hasGain",
       "undefined" : "hasGain"
     },
-    "domain" : "3",
+    "domain" : "1",
     "attributes" : [ "object" ],
     "id" : "66"
   } ]
