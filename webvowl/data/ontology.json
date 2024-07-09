@@ -75,10 +75,10 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -87,10 +87,10 @@
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "11",
@@ -108,7 +108,7 @@
     "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
     "id" : "21",
@@ -117,13 +117,13 @@
     "id" : "37",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "40",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
     "id" : "41",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "39",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
     "id" : "30",
@@ -247,28 +247,6 @@
     "id" : "8",
     "superClasses" : [ "9" ]
   }, {
-    "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial",
-    "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "IfcMaterial",
-      "undefined" : "IfcMaterial"
-    },
-    "subClasses" : [ "5" ],
-    "comment" : {
-      "undefined" : "A Material according to the IFC4 ifcOWL ontology"
-    },
-    "attributes" : [ "external" ],
-    "id" : "6"
-  }, {
     "iri" : "http://qudt.org/schema/qudt/Unit",
     "baseIri" : "http://qudt.org/schema/qudt",
     "instances" : 0,
@@ -290,6 +268,28 @@
     },
     "attributes" : [ "external" ],
     "id" : "9"
+  }, {
+    "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial",
+    "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IfcMaterial",
+      "undefined" : "IfcMaterial"
+    },
+    "subClasses" : [ "5" ],
+    "comment" : {
+      "undefined" : "A Material according to the IFC4 ifcOWL ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
   }, {
     "iri" : "http://qudt.org/vocab/unit/DeciB",
     "baseIri" : "http://qudt.org/vocab/unit",
@@ -353,7 +353,7 @@
       "undefined" : "The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here."
     },
     "attributes" : [ "external" ],
-    "id" : "25"
+    "id" : "22"
   }, {
     "iri" : "http://w3id.org/cno#Obstacle",
     "baseIri" : "http://w3id.org/cno",
@@ -374,7 +374,7 @@
     "comment" : {
       "undefined" : "Obstacles describe any physical object or material that can impede, reflect, scatter, or absorb radio waves, thereby affecting signal strength and propagation."
     },
-    "id" : "23"
+    "id" : "24"
   }, {
     "iri" : "http://qudt.org/vocab/unit/DeciB_M",
     "baseIri" : "http://qudt.org/vocab/unit",
@@ -501,7 +501,7 @@
       "undefined" : "\"Abstract node for geometry that should not contain geometry descriptions (neither RDF-based or text-based). This node can be used to attach additional information to the information as author, time of creation, geometry context or dependencies with other geometry descriptions as transformations, complementations or derivations. By creating subclasses of this class for specific types of geometry descriptions (e.g. OBJ, GEOM, glTF), more informational value can be added and used in querying for specific geometry description formats.\"@en ;"
     },
     "attributes" : [ "external" ],
-    "id" : "24"
+    "id" : "25"
   }, {
     "iri" : "https://w3id.org/cno#Transmitter",
     "baseIri" : "https://w3id.org/cno",
@@ -550,7 +550,7 @@
     "comment" : {
       "undefined" : "Power refers to the amount of energy transmitted or received by an antenna per unit time, measured in milliwatts (mw)."
     },
-    "id" : "40"
+    "id" : "38"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -577,7 +577,7 @@
     "comment" : {
       "undefined" : "Frequency is the number of occurrences of a repeating event per unit time, measured in Hertz (Hz)."
     },
-    "id" : "39"
+    "id" : "40"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -643,12 +643,12 @@
     "superClasses" : [ "1" ]
   }, {
     "instances" : 0,
-    "union" : [ "40", "31", "39", "51" ],
+    "union" : [ "38", "31", "40", "51" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "33"
   }, {
     "instances" : 0,
-    "union" : [ "40", "31", "39", "51" ],
+    "union" : [ "38", "31", "40", "51" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "53"
   }, {
@@ -701,7 +701,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "27",
-    "superClasses" : [ "23" ]
+    "superClasses" : [ "24" ]
   }, {
     "iri" : "http://w3id.org/cno#Gain",
     "baseIri" : "http://w3id.org/cno",
@@ -745,7 +745,7 @@
     "id" : "20",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "23",
     "type" : "owl:objectProperty"
   }, {
     "id" : "26",
@@ -769,7 +769,7 @@
     "id" : "36",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "38",
+    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "42",
@@ -864,13 +864,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "16"
   }, {
-    "range" : "9",
-    "domain" : "12",
+    "range" : "6",
+    "domain" : "5",
     "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
     "range" : "9",
-    "domain" : "8",
+    "domain" : "12",
     "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
@@ -881,7 +881,7 @@
   }, {
     "iri" : "htto://w3id.org/omg#hasGeometry",
     "baseIri" : "htto://w3id.org/omg",
-    "range" : "24",
+    "range" : "25",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -894,14 +894,14 @@
       "IRI-based" : "hasGeometry",
       "undefined" : "hasGeometry"
     },
-    "domain" : "23",
+    "domain" : "24",
     "comment" : {
       "undefined" : "A spatial representation for a given Feature."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "22"
+    "id" : "23"
   }, {
-    "range" : "23",
+    "range" : "24",
     "domain" : "27",
     "attributes" : [ "object", "anonymous" ],
     "id" : "26"
@@ -921,7 +921,7 @@
       "IRI-based" : "hasMaterial",
       "undefined" : "hasMaterial"
     },
-    "domain" : "23",
+    "domain" : "24",
     "comment" : {
       "undefined" : "Simple description of the obstacle Material."
     },
@@ -973,23 +973,23 @@
     "id" : "32"
   }, {
     "range" : "9",
-    "domain" : "10",
+    "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
-    "range" : "6",
-    "domain" : "5",
+    "range" : "9",
+    "domain" : "10",
     "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
     "range" : "9",
-    "domain" : "11",
+    "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
     "iri" : "http://w3id.org/cno#hasFrequency",
     "baseIri" : "http://w3id.org/cno",
-    "range" : "39",
+    "range" : "40",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1004,7 +1004,7 @@
     },
     "domain" : "21",
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "39"
   }, {
     "range" : "5",
     "domain" : "7",
@@ -1053,7 +1053,7 @@
       "IRI-based" : "hasUnit",
       "undefined" : "hasUnit"
     },
-    "domain" : "39",
+    "domain" : "40",
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
@@ -1141,7 +1141,7 @@
       "IRI-based" : "hasUnit",
       "undefined" : "hasUnit"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
@@ -1187,7 +1187,7 @@
   }, {
     "iri" : "http://w3id.org/cno#hasPower",
     "baseIri" : "http://w3id.org/cno",
-    "range" : "40",
+    "range" : "38",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1228,12 +1228,12 @@
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputElement",
     "baseIri" : "http://w3id.org/ioc",
-    "range" : "23",
+    "range" : "24",
     "label" : {
       "IRI-based" : "hasOutputElement",
       "undefined" : "hasOutputElement"
     },
-    "domain" : "25",
+    "domain" : "22",
     "comment" : {
       "undefined" : "Connects an element that the process has transformed."
     },
@@ -1255,7 +1255,7 @@
       "IRI-based" : "hasAttenuationRate",
       "undefined" : "hasAttenuationRate"
     },
-    "domain" : "23",
+    "domain" : "24",
     "attributes" : [ "object" ],
     "id" : "63"
   }, {
