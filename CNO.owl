@@ -1,0 +1,1074 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://w3id.org/cno"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://w3id.org/cno">
+    <Prefix name="" IRI="http://w3id.org/cno"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal xml:lang="en">Kirner, L., Individualized Production RWTH Aachen</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Oraskari, J., Individualized Production RWTH Aachen</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Zoecklein, M., Center Construction Robotics (CCR)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">wip</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal xml:lang="en">2023-12-04</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">CNO: Construction Site Network Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+        <Literal>cno</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <Literal>http://w3id.org/cno#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The Construction Site Network Ontology (CNO) is a domain ontology to describe concepts concerning wireless RF networks for construction sites. Its goal is to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>0.1.2</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://qudt.org/vocab/unit/DeciB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://qudt.org/vocab/unit/DeciB_M"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://qudt.org/vocab/unit/MilliW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttenuationRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Directional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Omnidirectional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://w3id.org/ioc#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/ont/geosparql#HZ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/bot#Element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/cno#Conductor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/cno#Dielectric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/cno#Receiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/cno#Transmitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/omg#Geometry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="htto://w3id.org/omg#hasGeometry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttenuationRate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFrequency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPower"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/ioc#hasOutputElement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://qudt.org/schema/qudt/numericValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConductivityFrequencyCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConductivityFrequencyExponent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRelativePermittivityFrequencyCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRelativePermittivityFrequencyExponent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.opengis.net/ont/geosparql#asWKT"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://schema.org/domainIncludes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://schema.org/rangeIncludes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2006/vcard/ns#family-name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2006/vcard/ns#fn"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2006/vcard/ns#given-name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2006/vcard/ns#hasOrganizationName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2006/vcard/ns#hasURL"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2006/vcard/ns#organization-name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://schema.org/name"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:duration"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://qudt.org/vocab/unit/DeciB"/>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://qudt.org/vocab/unit/DeciB_M"/>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://qudt.org/vocab/unit/MilliW"/>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttenuationRate"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://qudt.org/schema/qudt/hasUnit"/>
+            <Class IRI="http://qudt.org/vocab/unit/DeciB_M"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Directional"/>
+        <Class IRI="#Direction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frequency"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://qudt.org/schema/qudt/hasUnit"/>
+            <Class IRI="http://www.opengis.net/ont/geosparql#HZ"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://qudt.org/schema/qudt/hasUnit"/>
+            <Class IRI="http://qudt.org/vocab/unit/DeciB"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obstacle"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAttenuationRate"/>
+            <Class IRI="#AttenuationRate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obstacle"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasMaterial"/>
+            <Class IRI="#Material"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Omnidirectional"/>
+        <Class IRI="#Direction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://qudt.org/schema/qudt/hasUnit"/>
+            <Class IRI="http://qudt.org/vocab/unit/MilliW"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasDirection"/>
+            <Class IRI="#Direction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGain"/>
+            <Class IRI="#Gain"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPosition"/>
+            <Class IRI="#Position"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.opengis.net/ont/geosparql#HZ"/>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/bot#Element"/>
+        <Class IRI="#Obstacle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/cno#Conductor"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/cno#Dielectric"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/cno#Receiver"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/cno#Transmitter"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/cno#Transmitter"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasFrequency"/>
+            <Class IRI="#Frequency"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/cno#Transmitter"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPower"/>
+            <Class IRI="#Power"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Directional"/>
+        <Class IRI="#Omnidirectional"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/cno#Conductor"/>
+        <Class IRI="https://w3id.org/cno#Dielectric"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/cno#Receiver"/>
+        <Class IRI="https://w3id.org/cno#Transmitter"/>
+    </DisjointClasses>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://w3id.org/ioc#hasOutputElement"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="htto://w3id.org/omg#hasGeometry"/>
+        <Class IRI="#Obstacle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/hasUnit"/>
+        <ObjectUnionOf>
+            <Class IRI="#AttenuationRate"/>
+            <Class IRI="#Frequency"/>
+            <Class IRI="#Gain"/>
+            <Class IRI="#Power"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAttenuationRate"/>
+        <Class IRI="#Obstacle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirection"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFrequency"/>
+        <Class IRI="https://w3id.org/cno#Transmitter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGain"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <Class IRI="#Obstacle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPosition"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPower"/>
+        <Class IRI="https://w3id.org/cno#Transmitter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://w3id.org/ioc#hasOutputElement"/>
+        <Class IRI="http://w3id.org/ioc#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="htto://w3id.org/omg#hasGeometry"/>
+        <Class IRI="https://w3id.org/omg#Geometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/hasUnit"/>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttenuationRate"/>
+        <Class IRI="#AttenuationRate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirection"/>
+        <Class IRI="#Direction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFrequency"/>
+        <Class IRI="#Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGain"/>
+        <Class IRI="#Gain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <Class IRI="#Material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPosition"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPower"/>
+        <Class IRI="#Power"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://w3id.org/ioc#hasOutputElement"/>
+        <Class IRI="#Obstacle"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://qudt.org/schema/qudt/numericValue"/>
+        <ObjectUnionOf>
+            <Class IRI="#AttenuationRate"/>
+            <Class IRI="#Frequency"/>
+            <Class IRI="#Gain"/>
+            <Class IRI="#Power"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConductivityFrequencyCoefficient"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConductivityFrequencyExponent"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRelativePermittivityFrequencyCoefficient"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRelativePermittivityFrequencyExponent"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.opengis.net/ont/geosparql#asWKT"/>
+        <Class IRI="#Position"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://qudt.org/schema/qudt/numericValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConductivityFrequencyCoefficient"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConductivityFrequencyExponent"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRelativePermittivityFrequencyCoefficient"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRelativePermittivityFrequencyExponent"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.opengis.net/ont/geosparql#asWKT"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>htto://w3id.org/omg#hasGeometry</IRI>
+        <Literal>A spatial representation for a given Feature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>htto://w3id.org/omg#hasGeometry</IRI>
+        <Literal>http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>htto://w3id.org/omg#hasGeometry</IRI>
+        <Literal>hasGeometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://qudt.org/schema/qudt/Unit</IRI>
+        <Literal>A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://qudt.org/schema/qudt/Unit</IRI>
+        <Literal>http://qudt.org/schema/qudt/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://qudt.org/schema/qudt/Unit</IRI>
+        <Literal>Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://qudt.org/schema/qudt/hasUnit</IRI>
+        <Literal>This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://qudt.org/schema/qudt/hasUnit</IRI>
+        <Literal>http://qudt.org/schema/qudt/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://qudt.org/schema/qudt/hasUnit</IRI>
+        <Literal>hasUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://qudt.org/schema/qudt/numericValue</IRI>
+        <Literal>Numeric value of for somethinig described by an unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://qudt.org/schema/qudt/numericValue</IRI>
+        <Literal>http://qudt.org/schema/qudt/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://qudt.org/schema/qudt/numericValue</IRI>
+        <Literal>numericValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://qudt.org/vocab/unit/DeciB</IRI>
+        <Literal>A customary logarithmic measure most commonly used (in various ways) for measuring sound.Sound is measured on a logarithmic scale. Informally, if one sound is (10 decibels) &quot;louder&quot; than another, this means the louder sound is 10 times louder than the fainter one. A difference of 20 decibels corresponds to an increase of 10 x 10 or 100 times in intensity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://qudt.org/vocab/unit/DeciB</IRI>
+        <Literal>http://qudt.org/vocab/unit/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://qudt.org/vocab/unit/DeciB</IRI>
+        <Literal>dB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://qudt.org/vocab/unit/DeciB_M</IRI>
+        <Literal>&quot;Decibel Referred to 1mw&quot; is a &apos;Dimensionless Ratio&apos; expressed as dBm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://qudt.org/vocab/unit/DeciB_M</IRI>
+        <Literal>http://qudt.org/vocab/unit/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://qudt.org/vocab/unit/DeciB_M</IRI>
+        <Literal>dBm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://qudt.org/vocab/unit/MilliW</IRI>
+        <Literal>A unit of power equal to one thousandth of a watt.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://qudt.org/vocab/unit/MilliW</IRI>
+        <Literal>http://qudt.org/vocab/unit/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://qudt.org/vocab/unit/MilliW</IRI>
+        <Literal>mW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AttenuationRate</IRI>
+        <Literal>The attenuation rate is a simplified, summed value representing the reduction in intensity of  electromagnetic waves as they pass through a building element. It quantifies the loss of energy due to absorption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#AttenuationRate</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AttenuationRate</IRI>
+        <Literal>AttenuationRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Direction</IRI>
+        <Literal>Direction characterizes the pattern in which an antenna radiates or receives signals. Typical types include omnidirectional antennas, which radiate equally in all directions, and directional antennas, which focus the signal in a specific direction for increased range and performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Direction</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Direction</IRI>
+        <Literal>Direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Directional</IRI>
+        <Literal>Directionality refers to an antenna&apos;s ability to focus the signal in a specific direction, enhancing signal strength and range in that direction while minimizing it in others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Directional</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Directional</IRI>
+        <Literal>Directional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Frequency</IRI>
+        <Literal>Frequency is the number of occurrences of a repeating event per unit time, measured in Hertz (Hz).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Frequency</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Frequency</IRI>
+        <Literal>Frequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gain</IRI>
+        <Literal>Gain is a measure of an antenna&apos;s ability to direct or concentrate radio frequency energy in a particular direction, expressed in decibels (dB).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Gain</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gain</IRI>
+        <Literal>Gain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Material</IRI>
+        <Literal>Material is a class used to describe the relevant properties affecting radio wave propagation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Material</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Material</IRI>
+        <Literal>Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Obstacle</IRI>
+        <Literal>Obstacles describe any physical object or material that can impede, reflect, scatter, or absorb radio waves, thereby affecting signal strength and propagation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Obstacle</IRI>
+        <IRI>#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Obstacle</IRI>
+        <Literal>Obstacle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Omnidirectional</IRI>
+        <Literal>Omnidirectionality refers to an antenna&apos;s ability to radiate or receive signals uniformly in all horizontal directions, providing 360-degree coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Omnidirectional</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Omnidirectional</IRI>
+        <Literal>Omnidirectional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Position</IRI>
+        <Literal>Position refers to the specific location or coordinates of an antenna in a given space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Position</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Position</IRI>
+        <Literal>Position</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Power</IRI>
+        <Literal>Power refers to the amount of energy transmitted or received by an antenna per unit time, measured in milliwatts (mw).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Power</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Power</IRI>
+        <Literal>Power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Process</IRI>
+        <Literal>An antenna is the interface between radio waves propagating through space and electric currents moving in metal conductors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Process</IRI>
+        <IRI>#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process</IRI>
+        <Literal>Antenna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasAttenuationRate</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAttenuationRate</IRI>
+        <Literal>hasAttenuationRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasConductivityFrequencyCoefficient</IRI>
+        <Literal>Conductivity Frequency Coefficient according to Table 3 of ITU-R P.2040-3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasConductivityFrequencyCoefficient</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasConductivityFrequencyCoefficient</IRI>
+        <Literal>hasConductivityFrequencyCoefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasConductivityFrequencyExponent</IRI>
+        <Literal>Conductivity Frequency Exponent according to Table 3 of ITU-R P.2040-3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasConductivityFrequencyExponent</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasConductivityFrequencyExponent</IRI>
+        <Literal>hasConductivityFrequencyExponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasDirection</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDirection</IRI>
+        <Literal>hasDirection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasFrequency</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFrequency</IRI>
+        <Literal>hasFrequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasGain</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGain</IRI>
+        <Literal>hasGain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMaterial</IRI>
+        <Literal>Simple description of the obstacle Material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasMaterial</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMaterial</IRI>
+        <Literal>hasMaterial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasPosition</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPosition</IRI>
+        <Literal>hasPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasPower</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPower</IRI>
+        <Literal>hasPower</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRelativePermittivityFrequencyCoefficient</IRI>
+        <Literal>Relative Permittivity Frequency Coefficient according to Table 3 of ITU-R P.2040-3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasRelativePermittivityFrequencyCoefficient</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelativePermittivityFrequencyCoefficient</IRI>
+        <Literal>hasRelativePermittivityFrequencyCoefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRelativePermittivityFrequencyExponent</IRI>
+        <Literal>Relative Permittivity Frequency Exponent according to Table 3 of ITU-R P.2040-3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasRelativePermittivityFrequencyExponent</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelativePermittivityFrequencyExponent</IRI>
+        <Literal>hasRelativePermittivityFrequencyExponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/ioc#Process</IRI>
+        <Literal>The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://w3id.org/ioc#Process</IRI>
+        <Literal>http://w3id.org/ioc#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/ioc#Process</IRI>
+        <Literal>Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/ioc#hasOutputElement</IRI>
+        <Literal>Connects an element that the process has transformed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/ioc#hasOutputElement</IRI>
+        <Literal>hasOutputElement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.opengis.net/ont/geosparql#HZ</IRI>
+        <Literal>HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.opengis.net/ont/geosparql#HZ</IRI>
+        <Literal>http://qudt.org/vocab/unit/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.opengis.net/ont/geosparql#HZ</IRI>
+        <Literal>Hz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.opengis.net/ont/geosparql#asWKT</IRI>
+        <Literal>The WKT serialization of a Geometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.opengis.net/ont/geosparql#asWKT</IRI>
+        <Literal>http://www.opengis.net/ont/geosparql#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.opengis.net/ont/geosparql#asWKT</IRI>
+        <Literal>asWKT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial</IRI>
+        <Literal>A Material according to the IFC4 ifcOWL ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial</IRI>
+        <Literal>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial</IRI>
+        <Literal>IfcMaterial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/bot#Element</IRI>
+        <Literal>Element - Constituent of a construction entity with a characteristic technical function, form or position [[ISO-12006], 3.4.7].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/bot#Element</IRI>
+        <Literal>http://w3id.org/bot#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/bot#Element</IRI>
+        <Literal>bot:Element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/cno#Conductor</IRI>
+        <Literal>Conductor is a subclass of material known for its high electrical conductivity, causing significant absorption and reflection of radio waves, which leads to substantial signal attenuation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/cno#Conductor</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/cno#Conductor</IRI>
+        <Literal>Conductor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/cno#Dielectric</IRI>
+        <Literal>Dielectric is a subclass of material that does not conduct electricity but affects radio wave propagation by allowing waves to pass through with reduced speed and minimal signal loss due to its ability to store electrical energy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/cno#Dielectric</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/cno#Dielectric</IRI>
+        <Literal>Dielectric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/cno#Receiver</IRI>
+        <Literal>A receiver is a device that captures incoming radio waves and converts them back into electrical signals for processing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/cno#Receiver</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/cno#Receiver</IRI>
+        <Literal>Receiver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/cno#Transmitter</IRI>
+        <Literal>A transmitter is a device that converts electrical signals into radio waves and radiates them into the surrounding environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/cno#Transmitter</IRI>
+        <Literal>http://w3id.org/cno#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/cno#Transmitter</IRI>
+        <Literal>Transmitter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/omg#Geometry</IRI>
+        <Literal>&quot;Abstract node for geometry that should not contain geometry descriptions (neither RDF-based or text-based). This node can be used to attach additional information to the information as author, time of creation, geometry context or dependencies with other geometry descriptions as transformations, complementations or derivations. By creating subclasses of this class for specific types of geometry descriptions (e.g. OBJ, GEOM, glTF), more informational value can be added and used in querying for specific geometry description formats.&quot;@en ;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/omg#Geometry</IRI>
+        <Literal>https://w3id.org/omg#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/omg#Geometry</IRI>
+        <Literal>Geometry</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

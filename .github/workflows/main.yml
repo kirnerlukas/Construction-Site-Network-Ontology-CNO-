@@ -1,0 +1,59 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: 
+      image: ruby:2.7
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Java
+        run: |
+          echo "Installing Java..."
+          apt-get update
+          apt-get -y install default-jdk
+
+      - name: Create Documentation
+        run: |
+          echo "Creating documentation..."
+          mkdir -p public doc
+          wget https://github.com/dgarijo/Widoco/releases/download/v1.4.14/widoco-1.4.14-jar-with-dependencies.jar -O widoco.jar
+          java -jar widoco.jar -confFile config/config.properties -ontFile CNO.owl -outFolder doc -webVowl -rewriteAll
+          mv doc/index-en.html doc/index.html
+
+      - name: Copy results to /public for publishing
+        run: cp -r doc/* public
+
+      - name: Copy description-en.html to /public/sections
+        run: |
+          mkdir -p public/sections
+          cp description-en.html public/sections/description-en.html
+
+      - name: Copy introduction-en.html to /public/sections
+        run: |
+          mkdir -p public/sections
+          cp introduction-en.html public/sections/introduction-en.html
+
+      - name: Copy references-en.html to /public/sections
+        run: |
+          mkdir -p public/sections
+          cp references-en.html public/sections/references-en.html
+
+      - name: Copy pictures to /public/resources
+        run: |
+          mkdir -p public/resources
+          cp images/* public/resources/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
