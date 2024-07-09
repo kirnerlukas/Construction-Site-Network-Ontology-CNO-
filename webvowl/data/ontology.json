@@ -78,7 +78,7 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -96,13 +96,13 @@
     "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -123,13 +123,13 @@
     "id" : "37",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "38",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
     "id" : "41",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "40",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "30",
@@ -228,6 +228,28 @@
     "id" : "5",
     "superClasses" : [ "6" ]
   }, {
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Unit",
+      "undefined" : "Unit"
+    },
+    "subClasses" : [ "9", "10", "11", "12" ],
+    "comment" : {
+      "undefined" : "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
     "iri" : "http://qudt.org/vocab/unit/MilliW",
     "baseIri" : "http://qudt.org/vocab/unit",
     "instances" : 0,
@@ -247,30 +269,8 @@
       "undefined" : "A unit of power equal to one thousandth of a watt."
     },
     "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "9" ]
-  }, {
-    "iri" : "http://qudt.org/schema/qudt/Unit",
-    "baseIri" : "http://qudt.org/schema/qudt",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Unit",
-      "undefined" : "Unit"
-    },
-    "subClasses" : [ "10", "11", "8", "12" ],
-    "comment" : {
-      "undefined" : "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."
-    },
-    "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "11",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial",
     "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html",
@@ -314,7 +314,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "12",
-    "superClasses" : [ "9" ]
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://w3id.org/cno#Omnidirectional",
     "baseIri" : "http://w3id.org/cno",
@@ -386,12 +386,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://qudt.org/vocab/unit/",
+        "value" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm.",
         "type" : "label"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm.",
+        "value" : "http://qudt.org/vocab/unit/",
         "type" : "label"
       } ]
     },
@@ -400,8 +400,8 @@
       "undefined" : "dBm"
     },
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "9" ]
+    "id" : "9",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/cno#Conductor",
     "baseIri" : "https://w3id.org/cno",
@@ -444,8 +444,8 @@
       "undefined" : "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."
     },
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "9" ]
+    "id" : "10",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://w3id.org/cno#Process",
     "baseIri" : "http://w3id.org/cno",
@@ -577,7 +577,7 @@
     "comment" : {
       "undefined" : "Power refers to the amount of energy transmitted or received by an antenna per unit time, measured in milliwatts (mw)."
     },
-    "id" : "38"
+    "id" : "40"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -604,7 +604,7 @@
     "comment" : {
       "undefined" : "Frequency is the number of occurrences of a repeating event per unit time, measured in Hertz (Hz)."
     },
-    "id" : "40"
+    "id" : "39"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -670,12 +670,12 @@
     "superClasses" : [ "1" ]
   }, {
     "instances" : 0,
-    "union" : [ "38", "31", "40", "51" ],
+    "union" : [ "40", "31", "39", "51" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "33"
   }, {
     "instances" : 0,
-    "union" : [ "38", "31", "40", "51" ],
+    "union" : [ "40", "31", "39", "51" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "53"
   }, {
@@ -774,7 +774,7 @@
     "id" : "36",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "39",
+    "id" : "38",
     "type" : "owl:objectProperty"
   }, {
     "id" : "42",
@@ -817,10 +817,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "61",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "62",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "63",
     "type" : "owl:objectProperty"
@@ -874,7 +874,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
-    "range" : "9",
+    "range" : "8",
     "domain" : "12",
     "attributes" : [ "object", "anonymous" ],
     "id" : "19"
@@ -957,7 +957,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "9",
+    "range" : "8",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -977,24 +977,24 @@
     "attributes" : [ "object", "external" ],
     "id" : "32"
   }, {
-    "range" : "9",
-    "domain" : "11",
+    "range" : "8",
+    "domain" : "10",
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
-    "range" : "9",
-    "domain" : "10",
+    "range" : "8",
+    "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
-    "range" : "9",
-    "domain" : "8",
+    "range" : "8",
+    "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
     "iri" : "http://w3id.org/cno#hasFrequency",
     "baseIri" : "http://w3id.org/cno",
-    "range" : "40",
+    "range" : "39",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1009,7 +1009,7 @@
     },
     "domain" : "21",
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "38"
   }, {
     "range" : "5",
     "domain" : "7",
@@ -1045,7 +1045,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "11",
+    "range" : "10",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1058,7 +1058,7 @@
       "IRI-based" : "hasUnit",
       "undefined" : "hasUnit"
     },
-    "domain" : "40",
+    "domain" : "39",
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
@@ -1133,7 +1133,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "8",
+    "range" : "11",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1146,7 +1146,7 @@
       "IRI-based" : "hasUnit",
       "undefined" : "hasUnit"
     },
-    "domain" : "38",
+    "domain" : "40",
     "comment" : {
       "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
     },
@@ -1165,7 +1165,7 @@
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "10",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1192,7 +1192,7 @@
   }, {
     "iri" : "http://w3id.org/cno#hasPower",
     "baseIri" : "http://w3id.org/cno",
-    "range" : "38",
+    "range" : "40",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1208,6 +1208,20 @@
     "domain" : "21",
     "attributes" : [ "object" ],
     "id" : "60"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasOutputElement",
+      "undefined" : "hasOutputElement"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Connects an element that the process has transformed."
+    },
+    "attributes" : [ "asymmetric", "object", "external" ],
+    "id" : "61"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#asWKT",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
@@ -1229,20 +1243,6 @@
       "undefined" : "The WKT serialization of a Geometry."
     },
     "attributes" : [ "datatype", "external" ],
-    "id" : "61"
-  }, {
-    "iri" : "http://w3id.org/ioc#hasOutputElement",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "hasOutputElement",
-      "undefined" : "hasOutputElement"
-    },
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "Connects an element that the process has transformed."
-    },
-    "attributes" : [ "asymmetric", "object", "external" ],
     "id" : "62"
   }, {
     "iri" : "http://w3id.org/cno#hasAttenuationRate",
