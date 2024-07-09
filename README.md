@@ -20,8 +20,8 @@ This project is released under the Creative Commons Attribution 2.0 Internationa
   year         = 2024,
   publisher    = {Zenodo},
   version      = {0.5},
-  doi          = {ZENODO DOI},
-  url          = {ZENODO URL}
+  doi          = {10.5281/zenodo.12699560},
+  url          = {https://zenodo.org/doi/10.5281/zenodo.12699560}
 }
 ```
 
