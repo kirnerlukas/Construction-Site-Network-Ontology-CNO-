@@ -14,7 +14,7 @@ This project is released under the Creative Commons Attribution 2.0 Internationa
 ## How to cite
 ```
 @software{Kirner_20240907,
-  author       = {Lukas Kirner, Jyrki Oraskari, Marit Zoecklein and Sigrid Brell-Cokcan},
+  author       = {Lukas Kirner, Jyrki Oraskari, Marit Zöcklein and Sigrid Brell-Cokcan},
   title        = {{Construction Site Network Ontolgoy (CNO) v 0.5}},
   month        = july,
   year         = 2024,
