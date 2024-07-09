@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/cno#"
+     xml:base="http://w3id.org/cno"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:schema1="https://schema.org/">
+    <owl:Ontology rdf:about="http://w3id.org/cno">
+        <terms:creator xml:lang="en">Kirner, L., Individualized Production RWTH Aachen</terms:creator>
+        <terms:creator>Oraskari, J., Individualized Production RWTH Aachen</terms:creator>
+        <terms:creator>Zoecklein, M., Center Construction Robotics (CCR)</terms:creator>
+        <terms:description xml:lang="en">wip</terms:description>
+        <terms:issued xml:lang="en">2023-12-04</terms:issued>
+        <terms:title xml:lang="en">CNO: Construction Site Network Ontology</terms:title>
+        <vann:preferredNamespacePrefix>cno</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://w3id.org/cno#</vann:preferredNamespaceUri>
+        <rdfs:comment>The Construction Site Network Ontology (CNO) is a domain ontology to describe concepts concerning wireless RF networks for construction sites. Its goal is to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches.</rdfs:comment>
+        <owl:versionInfo>0.1.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#family-name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#family-name"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#given-name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#given-name"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasOrganizationName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasOrganizationName"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasURL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasURL"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#organization-name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#organization-name"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- htto://w3id.org/omg#hasGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="htto://w3id.org/omg#hasGeometry">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Obstacle"/>
+        <rdfs:range rdf:resource="https://w3id.org/omg#Geometry"/>
+        <rdfs:comment>A spatial representation for a given Feature.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties</rdfs:isDefinedBy>
+        <rdfs:label>hasGeometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/hasUnit -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/hasUnit">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/cno#AttenuationRate"/>
+                    <rdf:Description rdf:about="http://w3id.org/cno#Frequency"/>
+                    <rdf:Description rdf:about="http://w3id.org/cno#Gain"/>
+                    <rdf:Description rdf:about="http://w3id.org/cno#Power"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment>This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system.</rdfs:comment>
+        <rdfs:isDefinedBy>http://qudt.org/schema/qudt/</rdfs:isDefinedBy>
+        <rdfs:label>hasUnit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasAttenuationRate -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cno#hasAttenuationRate">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Obstacle"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#AttenuationRate"/>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasAttenuationRate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasDirection -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cno#hasDirection">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#Direction"/>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasDirection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasFrequency -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cno#hasFrequency">
+        <rdfs:domain rdf:resource="https://w3id.org/cno#Transmitter"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#Frequency"/>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasFrequency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasGain -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cno#hasGain">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#Gain"/>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasGain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cno#hasMaterial">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Obstacle"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#Material"/>
+        <rdfs:comment>Simple description of the obstacle Material.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasMaterial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasPosition -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cno#hasPosition">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#Position"/>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasPosition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasPower -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cno#hasPower">
+        <rdfs:domain rdf:resource="https://w3id.org/cno#Transmitter"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#Power"/>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasPower</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/ioc#hasOutputElement -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/ioc#hasOutputElement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/ioc#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/cno#Obstacle"/>
+        <rdfs:comment>Connects an element that the process has transformed.</rdfs:comment>
+        <rdfs:label>hasOutputElement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/numericValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt/numericValue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/cno#AttenuationRate"/>
+                    <rdf:Description rdf:about="http://w3id.org/cno#Frequency"/>
+                    <rdf:Description rdf:about="http://w3id.org/cno#Gain"/>
+                    <rdf:Description rdf:about="http://w3id.org/cno#Power"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Numeric value of for somethinig described by an unit.</rdfs:comment>
+        <rdfs:isDefinedBy>http://qudt.org/schema/qudt/</rdfs:isDefinedBy>
+        <rdfs:label>numericValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasConductivityFrequencyCoefficient -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/cno#hasConductivityFrequencyCoefficient">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Conductivity Frequency Coefficient according to Table 3 of ITU-R P.2040-3</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasConductivityFrequencyCoefficient</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasConductivityFrequencyExponent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/cno#hasConductivityFrequencyExponent">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Conductivity Frequency Exponent according to Table 3 of ITU-R P.2040-3</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasConductivityFrequencyExponent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasRelativePermittivityFrequencyCoefficient -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/cno#hasRelativePermittivityFrequencyCoefficient">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Relative Permittivity Frequency Coefficient according to Table 3 of ITU-R P.2040-3</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasRelativePermittivityFrequencyCoefficient</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/cno#hasRelativePermittivityFrequencyExponent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/cno#hasRelativePermittivityFrequencyExponent">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Relative Permittivity Frequency Exponent according to Table 3 of ITU-R P.2040-3</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>hasRelativePermittivityFrequencyExponent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#asWKT -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
+        <rdfs:domain rdf:resource="http://w3id.org/cno#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The WKT serialization of a Geometry.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.opengis.net/ont/geosparql#</rdfs:isDefinedBy>
+        <rdfs:label>asWKT</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
+        <rdfs:comment>A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter.</rdfs:comment>
+        <rdfs:isDefinedBy>http://qudt.org/schema/qudt/</rdfs:isDefinedBy>
+        <rdfs:label>Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/DeciB -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit/DeciB">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment>A customary logarithmic measure most commonly used (in various ways) for measuring sound.Sound is measured on a logarithmic scale. Informally, if one sound is (10 decibels) &quot;louder&quot; than another, this means the louder sound is 10 times louder than the fainter one. A difference of 20 decibels corresponds to an increase of 10 x 10 or 100 times in intensity.</rdfs:comment>
+        <rdfs:isDefinedBy>http://qudt.org/vocab/unit/</rdfs:isDefinedBy>
+        <rdfs:label>dB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/DeciB_M -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit/DeciB_M">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:isDefinedBy>&quot;Decibel Referred to 1mw&quot; is a &apos;Dimensionless Ratio&apos; expressed as dBm.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>http://qudt.org/vocab/unit/</rdfs:isDefinedBy>
+        <rdfs:label>dBm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/MilliW -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit/MilliW">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment>A unit of power equal to one thousandth of a watt.</rdfs:comment>
+        <rdfs:isDefinedBy>http://qudt.org/vocab/unit/</rdfs:isDefinedBy>
+        <rdfs:label>mW</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#AttenuationRate -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#AttenuationRate">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
+                <owl:allValuesFrom rdf:resource="http://qudt.org/vocab/unit/DeciB_M"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The attenuation rate is a simplified, summed value representing the reduction in intensity of  electromagnetic waves as they pass through a building element. It quantifies the loss of energy due to absorption.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>AttenuationRate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Direction -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Direction">
+        <rdfs:comment>Direction characterizes the pattern in which an antenna radiates or receives signals. Typical types include omnidirectional antennas, which radiate equally in all directions, and directional antennas, which focus the signal in a specific direction for increased range and performance.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Direction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Directional -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Directional">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cno#Direction"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/cno#Omnidirectional"/>
+        <rdfs:comment>Directionality refers to an antenna&apos;s ability to focus the signal in a specific direction, enhancing signal strength and range in that direction while minimizing it in others.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Directional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Frequency -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Frequency">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
+                <owl:allValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#HZ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Frequency is the number of occurrences of a repeating event per unit time, measured in Hertz (Hz).</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Gain -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Gain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
+                <owl:allValuesFrom rdf:resource="http://qudt.org/vocab/unit/DeciB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Gain is a measure of an antenna&apos;s ability to direct or concentrate radio frequency energy in a particular direction, expressed in decibels (dB).</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Gain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Material -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Material">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial"/>
+        <rdfs:comment>Material is a class used to describe the relevant properties affecting radio wave propagation.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Obstacle -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Obstacle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/cno#hasAttenuationRate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/cno#AttenuationRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/cno#hasMaterial"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/cno#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Obstacles describe any physical object or material that can impede, reflect, scatter, or absorb radio waves, thereby affecting signal strength and propagation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/cno#"/>
+        <rdfs:label>Obstacle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Omnidirectional -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Omnidirectional">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cno#Direction"/>
+        <rdfs:comment>Omnidirectionality refers to an antenna&apos;s ability to radiate or receive signals uniformly in all horizontal directions, providing 360-degree coverage</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Omnidirectional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Position -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Position">
+        <rdfs:comment>Position refers to the specific location or coordinates of an antenna in a given space.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Power -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Power">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
+                <owl:allValuesFrom rdf:resource="http://qudt.org/vocab/unit/MilliW"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Power refers to the amount of energy transmitted or received by an antenna per unit time, measured in milliwatts (mw).</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cno#Process -->
+
+
+    <owl:Class rdf:about="http://w3id.org/cno#Process">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/cno#hasDirection"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/cno#Direction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/cno#hasGain"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/cno#Gain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/cno#hasPosition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/cno#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An antenna is the interface between radio waves propagating through space and electric currents moving in metal conductors.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/cno#"/>
+        <rdfs:label>Antenna</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/ioc#Process -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ioc#Process">
+        <rdfs:comment>The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/ioc#</rdfs:isDefinedBy>
+        <rdfs:label>Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#HZ -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#HZ">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment>HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.</rdfs:comment>
+        <rdfs:isDefinedBy>http://qudt.org/vocab/unit/</rdfs:isDefinedBy>
+        <rdfs:label>Hz</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial">
+        <rdfs:comment>A Material according to the IFC4 ifcOWL ontology</rdfs:comment>
+        <rdfs:isDefinedBy>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#</rdfs:isDefinedBy>
+        <rdfs:label>IfcMaterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Element">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cno#Obstacle"/>
+        <rdfs:comment>Element - Constituent of a construction entity with a characteristic technical function, form or position [[ISO-12006], 3.4.7].</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/bot#</rdfs:isDefinedBy>
+        <rdfs:label>bot:Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cno#Conductor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cno#Conductor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cno#Material"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cno#Dielectric"/>
+        <rdfs:comment>Conductor is a subclass of material known for its high electrical conductivity, causing significant absorption and reflection of radio waves, which leads to substantial signal attenuation.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Conductor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cno#Dielectric -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cno#Dielectric">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cno#Material"/>
+        <rdfs:comment>Dielectric is a subclass of material that does not conduct electricity but affects radio wave propagation by allowing waves to pass through with reduced speed and minimal signal loss due to its ability to store electrical energy.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Dielectric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cno#Receiver -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cno#Receiver">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cno#Process"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cno#Transmitter"/>
+        <rdfs:comment>A receiver is a device that captures incoming radio waves and converts them back into electrical signals for processing.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Receiver</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cno#Transmitter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cno#Transmitter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cno#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/cno#hasFrequency"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/cno#Frequency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/cno#hasPower"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/cno#Power"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A transmitter is a device that converts electrical signals into radio waves and radiates them into the surrounding environment.</rdfs:comment>
+        <rdfs:isDefinedBy>http://w3id.org/cno#</rdfs:isDefinedBy>
+        <rdfs:label>Transmitter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/omg#Geometry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/omg#Geometry">
+        <rdfs:comment>&quot;Abstract node for geometry that should not contain geometry descriptions (neither RDF-based or text-based). This node can be used to attach additional information to the information as author, time of creation, geometry context or dependencies with other geometry descriptions as transformations, complementations or derivations. By creating subclasses of this class for specific types of geometry descriptions (e.g. OBJ, GEOM, glTF), more informational value can be added and used in querying for specific geometry description formats.&quot;@en ;</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/omg#</rdfs:isDefinedBy>
+        <rdfs:label>Geometry</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1327 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/omg", "http://qudt.org/schema/qudt", "htto://w3id.org/omg", "https://w3id.org/cno", "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html", "http://w3id.org/ioc", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2000/01/rdf-schema", "http://qudt.org/vocab/unit", "http://w3id.org/cno", "http://www.opengis.net/ont/geosparql" ],
+    "title" : {
+      "en" : "CNO: Construction Site Network Ontology"
+    },
+    "iri" : "http://w3id.org/cno",
+    "version" : "0.1.2",
+    "author" : [ "Oraskari, J., Individualized Production RWTH Aachen", "Zoecklein, M., Center Construction Robotics (CCR)", "Kirner, L., Individualized Production RWTH Aachen" ],
+    "description" : {
+      "en" : "wip"
+    },
+    "comments" : {
+      "undefined" : "The Construction Site Network Ontology (CNO) is a domain ontology to describe concepts concerning wireless RF networks for construction sites. Its goal is to add concepts and connect them to existing ontologies such as ifcOWL to enable singal strength estimation approaches."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Zoecklein, M., Center Construction Robotics (CCR)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Kirner, L., Individualized Production RWTH Aachen",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Oraskari, J., Individualized Production RWTH Aachen",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "cno",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.2",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "en",
+        "value" : "2023-12-04",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "CNO: Construction Site Network Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/cno#Directional",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Directional",
+      "undefined" : "Directional"
+    },
+    "comment" : {
+      "undefined" : "Directionality refers to an antenna's ability to focus the signal in a specific direction, enhancing signal strength and range in that direction while minimizing it in others."
+    },
+    "id" : "3",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/cno#Dielectric",
+    "baseIri" : "https://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dielectric",
+      "undefined" : "Dielectric"
+    },
+    "comment" : {
+      "undefined" : "Dielectric is a subclass of material that does not conduct electricity but affects radio wave propagation by allowing waves to pass through with reduced speed and minimal signal loss due to its ability to store electrical energy."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/cno#Material",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Material",
+      "undefined" : "Material"
+    },
+    "subClasses" : [ "4", "7" ],
+    "comment" : {
+      "undefined" : "Material is a class used to describe the relevant properties affecting radio wave propagation."
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Unit",
+      "undefined" : "Unit"
+    },
+    "subClasses" : [ "9", "10", "11", "12" ],
+    "comment" : {
+      "undefined" : "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html#IfcMaterial",
+    "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/index.html",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IfcMaterial",
+      "undefined" : "IfcMaterial"
+    },
+    "subClasses" : [ "5" ],
+    "comment" : {
+      "undefined" : "A Material according to the IFC4 ifcOWL ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://qudt.org/vocab/unit/MilliW",
+    "baseIri" : "http://qudt.org/vocab/unit",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/unit/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MilliW",
+      "undefined" : "mW"
+    },
+    "comment" : {
+      "undefined" : "A unit of power equal to one thousandth of a watt."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://qudt.org/vocab/unit/DeciB",
+    "baseIri" : "http://qudt.org/vocab/unit",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/unit/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DeciB",
+      "undefined" : "dB"
+    },
+    "comment" : {
+      "undefined" : "A customary logarithmic measure most commonly used (in various ways) for measuring sound.Sound is measured on a logarithmic scale. Informally, if one sound is (10 decibels) \"louder\" than another, this means the louder sound is 10 times louder than the fainter one. A difference of 20 decibels corresponds to an increase of 10 x 10 or 100 times in intensity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://w3id.org/cno#Omnidirectional",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Omnidirectional",
+      "undefined" : "Omnidirectional"
+    },
+    "comment" : {
+      "undefined" : "Omnidirectionality refers to an antenna's ability to radiate or receive signals uniformly in all horizontal directions, providing 360-degree coverage"
+    },
+    "id" : "17",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Process",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Process",
+      "undefined" : "Process"
+    },
+    "comment" : {
+      "undefined" : "The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/cno#Obstacle",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Obstacle",
+      "undefined" : "Obstacle"
+    },
+    "subClasses" : [ "27" ],
+    "comment" : {
+      "undefined" : "Obstacles describe any physical object or material that can impede, reflect, scatter, or absorb radio waves, thereby affecting signal strength and propagation."
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://qudt.org/vocab/unit/DeciB_M",
+    "baseIri" : "http://qudt.org/vocab/unit",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "\"Decibel Referred to 1mw\" is a 'Dimensionless Ratio' expressed as dBm.",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/unit/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DeciB_M",
+      "undefined" : "dBm"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/cno#Conductor",
+    "baseIri" : "https://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Conductor",
+      "undefined" : "Conductor"
+    },
+    "comment" : {
+      "undefined" : "Conductor is a subclass of material known for its high electrical conductivity, causing significant absorption and reflection of radio waves, which leads to substantial signal attenuation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#HZ",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/unit/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HZ",
+      "undefined" : "Hz"
+    },
+    "comment" : {
+      "undefined" : "HZ is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://w3id.org/cno#Process",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Process",
+      "undefined" : "Antenna"
+    },
+    "subClasses" : [ "21", "15" ],
+    "comment" : {
+      "undefined" : "An antenna is the interface between radio waves propagating through space and electric currents moving in metal conductors."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/cno#Direction",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Direction",
+      "undefined" : "Direction"
+    },
+    "subClasses" : [ "3", "17" ],
+    "comment" : {
+      "undefined" : "Direction characterizes the pattern in which an antenna radiates or receives signals. Typical types include omnidirectional antennas, which radiate equally in all directions, and directional antennas, which focus the signal in a specific direction for increased range and performance."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://w3id.org/cno#AttenuationRate",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AttenuationRate",
+      "undefined" : "AttenuationRate"
+    },
+    "comment" : {
+      "undefined" : "The attenuation rate is a simplified, summed value representing the reduction in intensity of  electromagnetic waves as they pass through a building element. It quantifies the loss of energy due to absorption."
+    },
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/omg#Geometry",
+    "baseIri" : "https://w3id.org/omg",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Geometry",
+      "undefined" : "Geometry"
+    },
+    "comment" : {
+      "undefined" : "\"Abstract node for geometry that should not contain geometry descriptions (neither RDF-based or text-based). This node can be used to attach additional information to the information as author, time of creation, geometry context or dependencies with other geometry descriptions as transformations, complementations or derivations. By creating subclasses of this class for specific types of geometry descriptions (e.g. OBJ, GEOM, glTF), more informational value can be added and used in querying for specific geometry description formats.\"@en ;"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/cno#Transmitter",
+    "baseIri" : "https://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Transmitter",
+      "undefined" : "Transmitter"
+    },
+    "comment" : {
+      "undefined" : "A transmitter is a device that converts electrical signals into radio waves and radiates them into the surrounding environment."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/cno#Power",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Power",
+      "undefined" : "Power"
+    },
+    "comment" : {
+      "undefined" : "Power refers to the amount of energy transmitted or received by an antenna per unit time, measured in milliwatts (mw)."
+    },
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://w3id.org/cno#Frequency",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Frequency",
+      "undefined" : "Frequency"
+    },
+    "comment" : {
+      "undefined" : "Frequency is the number of occurrences of a repeating event per unit time, measured in Hertz (Hz)."
+    },
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://w3id.org/cno#Position",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Position",
+      "undefined" : "Position"
+    },
+    "comment" : {
+      "undefined" : "Position refers to the specific location or coordinates of an antenna in a given space."
+    },
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/cno#Receiver",
+    "baseIri" : "https://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Receiver",
+      "undefined" : "Receiver"
+    },
+    "comment" : {
+      "undefined" : "A receiver is a device that captures incoming radio waves and converts them back into electrical signals for processing."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "1" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "40", "31", "39", "51" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "33"
+  }, {
+    "instances" : 0,
+    "union" : [ "40", "31", "39", "51" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/bot#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Element",
+      "undefined" : "bot:Element"
+    },
+    "comment" : {
+      "undefined" : "Element - Constituent of a construction entity with a characteristic technical function, form or position [[ISO-12006], 3.4.7]."
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://w3id.org/cno#Gain",
+    "baseIri" : "http://w3id.org/cno",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Gain",
+      "undefined" : "Gain"
+    },
+    "comment" : {
+      "undefined" : "Gain is a measure of an antenna's ability to direct or concentrate radio frequency energy in a particular direction, expressed in decibels (dB)."
+    },
+    "id" : "51"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/cno#hasDirection",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDirection",
+      "undefined" : "hasDirection"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "htto://w3id.org/omg#hasGeometry",
+    "baseIri" : "htto://w3id.org/omg",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry",
+      "undefined" : "hasGeometry"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "A spatial representation for a given Feature."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "24",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/cno#hasMaterial",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMaterial",
+      "undefined" : "hasMaterial"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Simple description of the obstacle Material."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://w3id.org/cno#hasConductivityFrequencyCoefficient",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasConductivityFrequencyCoefficient",
+      "undefined" : "hasConductivityFrequencyCoefficient"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Conductivity Frequency Coefficient according to Table 3 of ITU-R P.2040-3"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasUnit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://w3id.org/cno#hasFrequency",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFrequency",
+      "undefined" : "hasFrequency"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://w3id.org/cno#hasRelativePermittivityFrequencyExponent",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRelativePermittivityFrequencyExponent",
+      "undefined" : "hasRelativePermittivityFrequencyExponent"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Relative Permittivity Frequency Exponent according to Table 3 of ITU-R P.2040-3"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasUnit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
+    },
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/cno#hasRelativePermittivityFrequencyCoefficient",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRelativePermittivityFrequencyCoefficient",
+      "undefined" : "hasRelativePermittivityFrequencyCoefficient"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Relative Permittivity Frequency Coefficient according to Table 3 of ITU-R P.2040-3"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasUnit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
+    },
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/numericValue",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "54",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "numericValue",
+      "undefined" : "numericValue"
+    },
+    "domain" : "53",
+    "comment" : {
+      "undefined" : "Numeric value of for somethinig described by an unit."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasUnit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "40",
+    "comment" : {
+      "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
+    },
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "21",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasUnit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."
+    },
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "17",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://w3id.org/cno#hasPower",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPower",
+      "undefined" : "hasPower"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#asWKT",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "asWKT",
+      "undefined" : "asWKT"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "The WKT serialization of a Geometry."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasOutputElement",
+      "undefined" : "hasOutputElement"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Connects an element that the process has transformed."
+    },
+    "attributes" : [ "external", "asymmetric", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://w3id.org/cno#hasAttenuationRate",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAttenuationRate",
+      "undefined" : "hasAttenuationRate"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://w3id.org/cno#hasConductivityFrequencyExponent",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasConductivityFrequencyExponent",
+      "undefined" : "hasConductivityFrequencyExponent"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Conductivity Frequency Exponent according to Table 3 of ITU-R P.2040-3"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://w3id.org/cno#hasPosition",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPosition",
+      "undefined" : "hasPosition"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://w3id.org/cno#hasGain",
+    "baseIri" : "http://w3id.org/cno",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cno#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGain",
+      "undefined" : "hasGain"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  } ]
+}
