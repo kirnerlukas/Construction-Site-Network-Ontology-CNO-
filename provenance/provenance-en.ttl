@@ -8,8 +8,8 @@
 	 dc:creator <https://orcid.org/0000-0001-9753-2422>;
 	 prov:wasAttributedTo < https://orcid.org/0000-0002-4723-3878>;
 	 dc:creator < https://orcid.org/0000-0002-4723-3878>;
-	 prov:wasAttributedTo < >;
-	 dc:creator < >;
+	 prov:wasAttributedTo < https://orcid.org/0009-0007-3098-5663>;
+	 dc:creator < https://orcid.org/0009-0007-3098-5663>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2024-07-09";
 .
